@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PUGC</title>
+    <link rel="icon" href="file:///C:/Users/Hp/OneDrive/Desktop/University-Website-main/images/pu.logo.png" type="image/gif">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- -------------HEADER------------   -->
+
+    <section class="header">
+      <nav>
+        <!-- <a href="index.html"><img src="images/logo1.png" alt="logo" /></a> -->
+         <a href="index.html"><img src="images/pu.logo.png" style="width: 60px"  alt=""></a>
+         <h1 style="color:  white;">Punjab University</h1>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.php">ABOUT</a></li>
+            <li><a href="course.php">DEPARTMENT</a></li>
+            <li><a href="blog.php">Faculty</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="notice-board.html">Notice Board</a></li>
+            <li><a href="society.php">Society</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box">
+        <h1>Punjab University Gujranwala Campus</h1>
+        <p>
+          The great aim of education at PUGC is not just to gain knowledge, but to put it into action.
+        </p>
+        <a href="about.php" class="hero-btn">Visit Us TO Know More</a>
+      </div>
+    </section>
+
+    <!-- -----------CONTACT US--------- -->
+
+    <section class="location">
+      <iframe
+        src="https://maps.google.com/maps?hl=en&amp;q=55R3+45Q,%20NH%205%D8%8C%20near%20Ali%20Pur%20Chowk,%20Gujranwala,%20Punjab,%20Pakistan+()&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        width="400"
+        height="400"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+    <section class="contact-us">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa fa-home"></i>
+                    <span>
+                        <h5>Punjab University Gujranwala Campus</h5>
+                        <p>Near Ali Pur Chowk Rawalpindi Bypass Gujranwala, Pakistan.</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <span>
+                        <h5>+92 (0) 55 92 01 22 2</h5>
+                        <p>Monday to Friday, 8 to 6</p>
+                    </span>
+                </div>
+                <div>
+                    <i class="fa fa-envelope-o"></i>
+                    <span>
+                        <h5>infocell@pu.edu.pk</h5>
+                        <p>E-mail us your query</p>
+                    </span>
+                </div>
+            </div>
+            <div class="contact-col">
+                <form action="form-handler.php" method="post">
+                    <input type="text" name="name" placeholder="Enter your name"
+                    required>
+                    <input type="email" name="email" placeholder="Enter your E-mail Adress"
+                    required>
+                    <input type="text" name="subject" placeholder="Enter your subject"
+                    required>
+                    <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                    <button type="submit" class="hero-btn red-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- -----------FOOTER----------  -->
+    <section class="footer">
+        <h4>About Us</h4>
+        
+          <p>
+            "Punjab University Gujranwala Campus offers a vibrant academic environment with modern facilities and a diverse range of programs. Dedicated to fostering innovation and critical thinking, we prepare students to excel in their chosen fields."
+            fugiat excepturi molestiae! Doloremque asperiores eaque quos quo
+          </p>
+          <div class="icons">
+            <a href="https://www.facebook.com/PUGujranwala"><i class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/pugc.confession?igsh=MWlmaTU4Z3k2dW02aw=="><i class="fa fa-instagram"></i></a>
+            <a href="https://www.facebook.com/PUGujranwala"><i class="fa fa-twitter"></i></a>
+            <!-- <i class="fa fa-linkedin"></i> -->
+      </section>    
+
+    <!-- <! ---------JavaScript for Toggle Menu ---------  > -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
